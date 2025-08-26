@@ -48,7 +48,13 @@
       "schema:rangeIncludes": [
         {
           "@id": "schema:AnatomicalSystem"
-        }
+        },
+        {
+          "@id": "schema:URL"
+        },
+        {
+          "@id": "schema:DefinedTerm"
+        }  
       ]
     },
     {
@@ -60,7 +66,13 @@
       "schema:rangeIncludes": [
         {
           "@id": "schema:AnatomicalStructure"
-        }
+        },
+        {
+          "@id": "schema:URL"
+        },
+        {
+          "@id": "schema:DefinedTerm"
+        } 
       ]
     },
     {
@@ -72,7 +84,13 @@
       "schema:rangeIncludes": [
         {
           "@id": "schema:Text"
-        }
+        },
+        {
+          "@id": "schema:URL"
+        },
+        {
+          "@id": "schema:DefinedTerm"
+        } 
       ]
     },
     {

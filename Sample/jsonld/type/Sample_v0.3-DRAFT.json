@@ -38,6 +38,12 @@
       "schema:rangeIncludes": [
         {
           "@id": "schema:Text"
+        },
+        {
+          "@id": "schema:URL"
+        },
+        {
+          "@id": "schema:PropertyValue"
         }
       ]
     },
@@ -114,10 +120,10 @@
       ]
     },
     {
-      "@id": "bioschemastypesdrafts:processingDate",
+      "@id": "bioschemastypesdrafts:dateProcessed",
       "@type": "rdf:Property",
       "rdfs:comment": "The date the sample was processed or used in a method.",
-      "rdfs:label": "processingDate",
+      "rdfs:label": "dateProcessed",
       "schema:domainIncludes": {"@id": "bioschemastypesdrafts:Sample"},
       "schema:rangeIncludes": [
         {
@@ -227,6 +233,9 @@
         },
         {
           "@id": "schema:URL"
+        },
+        {
+          "@id": "schema:DefinedTerm"
         }
       ]
     },
@@ -257,6 +266,12 @@
       "schema:rangeIncludes": [
         {
           "@id": "schema:Text"
+        },
+        {
+          "@id": "schema:URL"
+        },
+        {
+          "@id": "schema:DefinedTerm"
         }
       ]
     },
@@ -332,6 +347,9 @@
         },
         {
           "@id": "schema:URL"
+        },
+        {
+          "@id": "schema:DefinedTerm"
         }
       ]
     },
@@ -396,10 +414,10 @@
       ]
     },
     {
-      "@id": "bioschemastypesdrafts:accessConditions",
+      "@id": "bioschemastypesdrafts:conditionsOfAccess",
       "@type": "rdf:Property",
       "rdfs:comment": "Sample access statement outlining conditions/requirements need to be fulfilled before access to the sample is granted.",
-      "rdfs:label": "accessConditions",
+      "rdfs:label": "conditionsOfAccess",
       "schema:domainIncludes": {"@id": "bioschemastypesdrafts:Sample"},
       "schema:rangeIncludes": [
         {
@@ -422,7 +440,7 @@
     {
       "@id": "bioschemastypesdrafts:studyTitle",
       "@type": "rdf:Property",
-      "rdfs:comment": "Title of the study the samples belong to",
+      "rdfs:comment": "Title of the study to which the samples belong",
       "rdfs:label": "studyTitle",
       "schema:domainIncludes": {"@id": "bioschemastypesdrafts:Sample"},
       "schema:rangeIncludes": [
