@@ -1,5 +1,17 @@
 {
-    "@context": "http://schema.org/",
+    "@context": [
+        "http://schema.org/",
+        {
+            "LabProtocol": "https://bioschemas.org/LabProtocol",
+            "LabProcess": "https://bioschemas.org/LabProcess",
+            "executesLabProtocol": "https://bioschemas.org/properties/executesLabProtocol",
+            "parameterValue": "https://bioschemas.org/properties/parameterValue",
+            "additionalProperty": "https://bioschemas.org/properties/additionalProperty",
+            "parameter": "https://bioschemas.org/properties/parameter",
+            "labEquipment": "https://bioschemas.org/properties/labEquipment",
+            "intendedUse": "https://bioschemas.org/properties/intendedUse"
+        }
+    ],
     "@type": [
         "LabProcess"
     ],
@@ -20,7 +32,29 @@
             "alternateName": "Photon System Instruments, FMT 150/400-RB",
             "name": "bioreactor",
             "termCode": "http://purl.obolibrary.org/obo/OBI_0001046"
-        }
+        },
+        "parameter": [
+            {
+                "@type": "PropertyValue",
+                "name": "temperature",
+                "propertyID": "http://purl.obolibrary.org/obo/PATO_0000146"
+             },
+             {
+                "@type": "PropertyValue",
+                "name": "culture medium volume",
+                "propertyID": "DPBO:1000155"
+             },
+             {
+                "@type": "PropertyValue",
+                "name": "Mixture Component",
+                "propertyID": "http://purl.obolibrary.org/obo/NCIT_C103243"
+             },
+             {
+                "@type": "PropertyValue",
+                "name": "light intensity",
+                "propertyID": "http://purl.obolibrary.org/obo/ZECO_0000151"
+             }     
+        ]
     },
     "parameterValue": [
         {
