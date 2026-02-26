@@ -1,0 +1,54 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl/",
+    "bioschemastypes": "https://discovery.biothings.io/ns/bioschemastypes/",
+    "bioschemastypesdrafts": "https://discovery.biothings.io/ns/bioschemastypesdrafts/",
+    "dct": "http://purl.org/dc/terms/",
+    "@dateModified": "08/26/2025, 08:33:01",
+    "labprotocolTempForRelease": "https://discovery.biothings.io/ns/labprotocolTempForRelease/",
+    "bioschemas": "https://discovery.biothings.io/ns/bioschemas/"
+  },
+  "@graph": [
+    {
+      "@id": "labprotocolTempForRelease:LabProtocol",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A lab protocol is a prospective description of a sequence of tasks and operations to be performed during experimental research in wet- or dry-labs. Version: v1.0 Changelog: * Add parameter attribute with Range PropertyValue for better conformance with LabProcess. Prepared by: Florian Wetzels and H. Lukas Weil",
+      "rdfs:label": "LabProtocol",
+      "rdfs:subClassOf": {
+        "@id": "bioschemastypesdrafts:LabProtocol"
+      },
+      "$validation": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "properties": {
+          "parameter": {
+            "description": "A structured description of a condition to be specified in the execution of this LabProtocol. This includes physical quantities that can be set for steps of this LabProtocol, such as temperature or time. Ideally given with a reference to an ontology (propertyID)."
+          }
+        },
+        "required": [],
+        "recommended": [],
+        "optional": []
+      },
+      "schemaVersion": [
+        "https://schema.org/docs/releases.html#v29.4"
+      ]
+    },
+    {
+      "@id": "labprotocolTempForRelease:parameter",
+      "@type": "rdf:Property",
+      "rdfs:comment": "A structured description of a condition to be specified in the execution of this LabProtocol. This includes physical quantities that can be set for steps of this LabProtocol, such as temperature or time. Ideally given with a reference to an ontology (propertyID).",
+      "rdfs:label": "parameter",
+      "schema:domainIncludes": {
+        "@id": "labprotocolTempForRelease:LabProtocol"
+      },
+      "schema:rangeIncludes": [
+        {
+          "@id": "schema:PropertyValue"
+        }
+      ]
+    }
+  ]
+}
